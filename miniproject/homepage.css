@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.logo {
+    height: 60px;
+}
+
+.chat{
+    text-align: center;
+    border-radius: 5px;
+}
+.click {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.click:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.click img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container */
+    border-radius: 12px;
+}
+
+.click h3 {
+    margin-top: 10px; /* Add some spacing between the image and the heading */
+}
+
+h2{
+    text-align: center;
+}
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-brand {
+    margin-left: 1rem; /* Adjust this value as needed for more/less space */
+}
+.navbar-collapse {
+    margin-right: 1rem; /* Adjust this value as needed for more/less space */
+}
+.foot
+{
+    background-color: white;
+    color: black;
+}
+.ourabout {
+    display: flex;
+    justify-content: center; /* Center the content horizontally within the box */
+    width: 1200px; /* Define the width of the text box */
+    padding-left: 150px;
+    padding-right: 150px; 
+    margin: 0 auto; /* Center the entire text box horizontally */
+  }
+  
+  p { 
+    text-align: center; 
+  }
+  
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text{
+    text-align: left;
+
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.display:hover {
+    transform: scale(1.01); /* Increase size on hover */
+}
+.col-lg-6 wow fadeInUp{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    
+}
+.card.mb-3 {
+    width: 1200px;
+    height: 200px;
+    
+}
+
+
+.card.mb-3:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.type{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-items: center;
+}
+.foot
+{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px; 
+    margin: 0 auto;
+    justify-content: center;
+}
+.colmb-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    margin: 0 auto;
+}
+
+
+.trust{
+    align-items: center;
+    text-align: center;
+}
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.chat{
+    background-color: black;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    
+    color: white;
+}
+.box ul li {
+    color: #333;
+    margin-bottom: 10px;
+}
+.same{
+    background-color: black;
+    color: white;
+}

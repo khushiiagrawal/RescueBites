@@ -1,0 +1,45 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the card container */
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Align cards with space around them */
+    max-width: 1200px; /* Limit maximum width of the card container */
+    margin: 80px auto; /* Center align and add margin */
+}
+
+/* Styling for individual cards */
+.card {
+    background-color: #4fc4aa; /* Light grey background */
+    padding: 60px; /* Padding inside the card */
+    border-radius: 9px; /* Rounded corners */
+    width: 80%; /* Take up 45% of the container width */
+    margin: 10px; /* Margin between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.5rem; /* Larger font size for title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #161616; /* Dark grey text color */
+}
+
+/* Paragraph (text) styling */
+.card-text {
+    font-size: 1rem; /* Regular font size for text */
+    color: #124242; /* Slightly darker grey text color */
+    line-height: 1.5; /* Line height for readability */
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: large;
+}
+
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

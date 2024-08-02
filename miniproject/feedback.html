@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            height: 120px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm" action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" onclick="submitForm(event)">Submit Feedback</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Wait for the DOM to be fully loaded before executing the script
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to handle form submission
+        function submitForm(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Redirect to homepage.html
+            window.location.href = "homepage.html";
+        }
+
+        // Bind the submitForm function to the submit button click event
+        var submitButton = document.querySelector('#feedbackForm button[type="submit"]');
+        if (submitButton) {
+            submitButton.addEventListener('click', submitForm);
+        }
+    });
+</script>
+
+</body>
+</html>

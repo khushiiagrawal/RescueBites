@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <div id="book-details"></div>
+    <script src="main-bundle.js"></script>
+    <script>
+        import { db } from './firebaseConfig';
+        import { doc, getDoc } from 'firebase/firestore';
+
+        // Function to get query parameters
+        const getQueryParams = () => {
+            return new URLSearchParams(window.location.search);
+        };
+
+        // Fetch and display book details
+        const displayBookDetails = async () => {
+            const params = getQueryParams();
+            const bookId = params.get('id');
+            if (bookId) {
+                const docRef = doc(db, 'books', bookId);
+                const docSnap = await getDoc(docRef);
+                if (docSnap.exists()) {
+                    const bookDetails = document.getElementById('book-details');
+                    bookDetails.innerHTML = `
+                        <h2>${docSnap.data().title}</h2>
+                        <p>by ${docSnap.data().author}</p>
+                        <p>${docSnap.data().description || 'No description available.'}</p>
+                    `;
+                } else {
+                    alert('No such book!');
+                }
+            } else {
+                alert('No book ID provided!');
+            }
+        };
+
+        displayBookDetails();
+    </script>
+</body>
+</html>
